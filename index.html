@@ -12,7 +12,7 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; margin-top: 5rem;}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
@@ -34,13 +34,23 @@
           <img src="./images/image-intro-mobile.jpg" alt="" class="family">
         </div>
         <div class="hero-banner">
+          <picture>
+            <source srcset="./images/bg-pattern-intro-left-desktop.svg" media="(min-width: 768px)">
+            <source srcset="./images/bg-pattern-intro-left-mobile.svg" media="(max-width: 767px)">
+            <img class="hero-pattern-left" src="./images/bg-pattern-intro-left-mobile.svg" alt="">
+          </picture>
           <div class="lockup-wrapper">
             <div class="lockup">
               <h1 class="heading h1">Humanizing your insurance.</h1>
               <p>Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that’s right for you. Ensure you and your loved ones are protected.</p>
-              <button>View plans</button>
+              <button class="button">View plans</button>
             </div>
           </div>
+          <picture>
+            <source srcset="./images/bg-pattern-intro-right-desktop.svg" media="(min-width: 768px)">
+            <source srcset="./images/bg-pattern-intro-right-mobile.svg" media="(max-width: 767px)">
+            <img class="hero-pattern-right" src="./images/bg-pattern-intro-right-mobile.svg" alt="">
+          </picture>
         </div>
       </div>
     </section>
@@ -48,30 +58,37 @@
       <div class="section-wrapper">
         <div class="line"></div>
         <h2 class="heading h1">We're different</h2>
-        <div class="features">
-          <img src="./images/icon-snappy-process.svg" alt="" class="feature-icon">
-          <h3 class="heading h3">Snappy Process</h3>
-          <p>Our application process can be completed in minutes, not hours. Don’t get stuck filling in tedious forms.</p>
-        </div>
-        <div class="features">
-          <img src="./images/icon-affordable-prices.svg" alt="" class="feature-icon">
-          <h3 class="heading h3">Affordable Prices</h3>
-          <p>We don’t want you worrying about high monthly costs. Our prices may be low, but we still offer the best coverage possible.</p>
-        </div>
-        <div class="features">
-          <img src="./images/icon-people-first.svg" alt="" class="feature-icon">
-          <h3 class="heading h3">People First</h3>
-          <p>Our plans aren’t full of conditions and clauses to prevent payouts. We make sure you’re covered when you need it.</p>
+        <div class="features-wrapper">
+          <div class="features">
+            <img src="./images/icon-snappy-process.svg" alt="" class="feature-icon">
+            <h3 class="heading h3">Snappy Process</h3>
+            <p>Our application process can be completed in minutes, not hours. Don’t get stuck filling in tedious forms.</p>
+          </div>
+          <div class="features">
+            <img src="./images/icon-affordable-prices.svg" alt="" class="feature-icon">
+            <h3 class="heading h3">Affordable Prices</h3>
+            <p>We don’t want you worrying about high monthly costs. Our prices may be low, but we still offer the best coverage possible.</p>
+          </div>
+          <div class="features">
+            <img src="./images/icon-people-first.svg" alt="" class="feature-icon">
+            <h3 class="heading h3">People First</h3>
+            <p>Our plans aren’t full of conditions and clauses to prevent payouts. We make sure you’re covered when you need it.</p>
+          </div>
         </div>
       </div>
     </section>
     <section class="section-find-out-more">
       <div class="section-wrapper">
         <div class="box">
+          <picture>
+            <source srcset="./images/bg-pattern-how-we-work-desktop.svg" media="(min-width: 768px)">
+            <source srcset="./images/bg-pattern-how-we-work-mobile.svg" media="(max-width: 767px)">
+            <img class="box-pattern" src="./images/bg-pattern-how-we-work-mobile.svg" alt="">
+          </picture>
           <div class="lockup-wrapper">
             <div class="lockup">
               <h2 class="heading h2">Find out more about how we work</h2>
-              <button>How we work</button>
+              <button class="button">How we work</button>
             </div>
           </div>
         </div>
@@ -79,12 +96,17 @@
     </section>
   </main>
   <footer>
+    <picture>
+      <source srcset="./images/bg-pattern-footer-desktop.svg" media="(min-width: 768px)">
+      <source srcset="./images/bg-pattern-footer-mobile.svg" media="(max-width: 767px)">
+      <img class="footer-pattern" src="./images/bg-pattern-footer-mobile.svg" alt="">
+    </picture>
     <div class="section-wrapper">
       <div class="footer-header">
         <div>
           <img src="./images/logo.svg" alt="Insure">
         </div>
-        <div>
+        <div class="social-links">
           <a href="https://facebook.com" target="_blank"><img src="./images/icon-facebook.svg" alt="Facebook logo"></a>
           <a href="https://twitter.com" target="_blank"><img src="./images/icon-twitter.svg" alt="Twitter logo"></a>
           <a href="https://pinterest.com" target="_blank"><img src="./images/icon-pinterest.svg" alt="Pinterest logo"></a>
@@ -128,11 +150,11 @@
         </div>
       </div>
     </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/fabsantana" target="_blank">Fabricio Santana</a>.
+    </div>
   </footer>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.frontendmentor.io/profile/fabsantana" target="_blank">Fabricio Santana</a>.
-  </div>
 </body>
 </html>
